@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        
+        <script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
+        <script type="text/javascript" src="OSOpenspace.js"></script>
+        
+        <title>OS Openspace WMS Layer DEMO</title>
+    </head>
+    <body onload="init()">
+  
+<h2>Displaying an OS OpenSpace map via WMS layer</h2>
+  
+<div id="map" style="width: 700px; height: 500px; border: 1px solid black;">    
+    
+</div>
+
+    </body>
+    
+<script type="text/javascript">
+
+var map, layer;
+var key = "YOUR_KEY_HERE";
+
+//var lon = -1.470465;
+//var lat = 50.93812;
+var e = 437303;
+var n = 115542;
+
+var zoom = 5;
+
+function init(){
+    map = new OpenLayers.Map( 'map' );
+    
+    layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, {});
+        
+    map.addLayer(layer);
+
+    map.setCenter(new OpenLayers.LonLat(e, n), zoom);
+    map.addControl( new OpenLayers.Control.LayerSwitcher() );
+}
+        
+</script>
+    
+    
+</html>
+
