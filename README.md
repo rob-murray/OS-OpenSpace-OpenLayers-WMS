@@ -6,6 +6,8 @@ This is a new Openlayers WMS Layer which uses Ordnance Survey Openspace map tile
 
 !This service requires an API KEY - @see http://www.ordnancesurvey.co.uk/oswebsite/web-services/os-openspace/
 
+This layer uses the OS Openspace Free service and the mapstack is defined for this service.
+
 ## Contents
 
 This repository contains the following sections:
