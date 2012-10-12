@@ -8,7 +8,7 @@ This is a new Openlayers WMS Layer which uses Ordnance Survey Openspace map tile
 
 This layer uses the OS Openspace Free service and the mapstack is defined for this service.
 
-![ScreenShot](screenshot.png "Screenshot of demo app")
+![ScreenShot](https://github.com/rob-murray/openlayers-wms-os_openspace/raw/master/screenshot.png "Screenshot of demo app")
 
 ## Contents
 
