@@ -4,9 +4,11 @@
 
 This is a new Openlayers WMS Layer which uses Ordnance Survey Openspace map tiles. This can be used to access Ordnance Survey tiles without using the OS Openspace API which is tied to a certain version of OpenLayers and often behind the latest release.
 
-!This service requires an API KEY - @see http://www.ordnancesurvey.co.uk/oswebsite/web-services/os-openspace/
+!! This service requires an API KEY - @see http://www.ordnancesurvey.co.uk/oswebsite/web-services/os-openspace/
 
 This layer uses the OS Openspace Free service and the mapstack is defined for this service.
+
+![ScreenShot](screenshot.png "Screenshot of demo app")
 
 ## Contents
 
