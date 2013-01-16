@@ -44,6 +44,7 @@ How to use:
 
 var map, layer;
 var key = "YOUR_KEY";
+var url = "http://example.com"
 
 var e = 437303;
 var n = 115542;
@@ -53,7 +54,7 @@ var zoom = 5;
 function init(){
     map = new OpenLayers.Map( 'map' );
     
-    layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, {});
+    layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, url, {});
         
     map.addLayer(layer);
 
@@ -65,7 +66,7 @@ function init(){
 ```
 
 
-Please see the demo for full example.
+Please checkout the demo for full working example, with your API key of course.
 
 ## Contributions
 
