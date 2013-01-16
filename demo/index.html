@@ -10,7 +10,7 @@
         
         <title>OS Openspace WMS Layer DEMO</title>
     </head>
-    <body onload="init()">
+    <body>
   
 <h2>Displaying an OS OpenSpace map via WMS layer</h2>
   
@@ -21,27 +21,37 @@
     </body>
     
 <script type="text/javascript">
-
-var map, layer;
-var key = "YOUR_KEY_HERE";
-
-//var lon = -1.470465;
-//var lat = 50.93812;
-var e = 437303;
-var n = 115542;
-
-var zoom = 5;
-
-function init(){
-    map = new OpenLayers.Map( 'map' );
     
-    layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, {});
-        
-    map.addLayer(layer);
+(function() {
+    
+    "use strict";
 
-    map.setCenter(new OpenLayers.LonLat(e, n), zoom);
-    map.addControl( new OpenLayers.Control.LayerSwitcher() );
-}
+    var map, layer;
+    var key = "YOUR_KEY_HERE";
+    var url = "http://url";
+
+    //var lon = -1.470465;
+    //var lat = 50.93812;
+    var e = 437303;
+    var n = 115542;
+
+    var zoom = 5;
+
+    function init(){
+        
+        map = new OpenLayers.Map( 'map' );
+
+        layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, url, {});
+
+        map.addLayer(layer);
+
+        map.setCenter(new OpenLayers.LonLat(e, n), zoom);
+        map.addControl( new OpenLayers.Control.LayerSwitcher() );
+    }
+
+    window.onload = init;
+    
+}());
         
 </script>
     
