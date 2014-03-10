@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         
         <script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
-        <script type="text/javascript" src="OSOpenspace.js"></script>
+        <script type="text/javascript" src="../lib/OSOpenspace.js"></script>
         
-        <title>OS Openspace WMS Layer DEMO</title>
+        <title>OS OpenSpace WMS Layer DEMO</title>
     </head>
     <body>
   
@@ -26,27 +26,25 @@
     
     "use strict";
 
-    var map, layer;
-    var key = "YOUR_KEY_HERE";
-    var url = "http://url";
-
-    //var lon = -1.470465;
-    //var lat = 50.93812;
-    var e = 437303;
-    var n = 115542;
-
-    var zoom = 5;
+    var map, layer,
+        key = "EC9EDE7DAD732ABAE0430C6CA40AB812",
+        OSHQ = {
+            WGS84: [50.936715, -1.4701989],
+            OSGB: [437324, 115386]
+        },
+        zoom = 5;
 
     function init(){
         
         map = new OpenLayers.Map( 'map' );
 
-        layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, url, {});
+        layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, {});
 
         map.addLayer(layer);
 
-        map.setCenter(new OpenLayers.LonLat(e, n), zoom);
+        map.setCenter(new OpenLayers.LonLat(OSHQ.OSGB), zoom);
         map.addControl( new OpenLayers.Control.LayerSwitcher() );
+
     }
 
     window.onload = init;
