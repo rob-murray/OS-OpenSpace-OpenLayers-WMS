@@ -1,12 +1,12 @@
-# A new Openlayers WMS Layer for using Ordnance Survey Openspace map tiles
+## A new OpenLayers WMS Layer for using Ordnance Survey OpenSpace service
 
-## Description
+### Description
 
-This is a new Openlayers WMS Layer which uses Ordnance Survey Openspace map tiles. This can be used to access Ordnance Survey tiles without using the OS Openspace API which is tied to a certain version of OpenLayers and often behind the latest release.
+This is a new OpenLayers WMS Layer which uses Ordnance Survey OpenSpace service. This can be used to access Ordnance Survey tiles without using the OS OpenSpace API which is tied to a certain version of OpenLayers and often behind the latest release.
 
 !! This service requires an API KEY - @see http://www.ordnancesurvey.co.uk/oswebsite/web-services/os-openspace/
 
-This layer uses the OS Openspace Free service and the mapstack is defined for this service.
+This layer uses the OS OpenSpace Free service and the mapstack is defined for this service.
 
 ![ScreenShot](https://github.com/rob-murray/openlayers-wms-os_openspace/raw/master/screenshot.png "Screenshot of demo app")
 
@@ -21,11 +21,11 @@ This repository contains the following sections:
 
 How to use:
 
-1) Obtain an Ordnance Survey Openspace API Key for your domain. @see http://www.ordnancesurvey.co.uk/oswebsite/web-services/os-openspace/ 
+1) Obtain an Ordnance Survey OpenSpace API Key for your domain. @see http://www.ordnancesurvey.co.uk/oswebsite/web-services/os-openspace/ 
 
 2) Copy this library to your project - grab the OSOpenspace.js file
 
-2) Import Openlayers code - grab a production minified version or host this yourself
+2) Import OpenLayers code - grab a production minified version or host this yourself
 
 ```
 <script type="text/javascript" src="http://openlayers.org/api/OpenLayers.js"></script>
@@ -44,7 +44,6 @@ How to use:
 
 var map, layer;
 var key = "YOUR_KEY";
-var url = "http://example.com"
 
 var e = 437303;
 var n = 115542;
@@ -54,7 +53,7 @@ var zoom = 5;
 function init(){
     map = new OpenLayers.Map( 'map' );
     
-    layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace",key, url, {});
+    layer = new OpenLayers.Layer.OSOpenSpace("OS Openspace", key, {});
         
     map.addLayer(layer);
 
