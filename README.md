@@ -1,5 +1,7 @@
 ## A new OpenLayers WMS Layer for using Ordnance Survey OpenSpace service
 
+[![Haz Commitz Status](http://haz-commitz.herokuapp.com/repos/rob-murray/OS-OpenSpace-OpenLayers-WMS/badge.svg)](http://haz-commitz.herokuapp.com/repos/rob-murray/OS-OpenSpace-OpenLayers-WMS)
+
 ### Description
 
 This is a new OpenLayers WMS Layer which uses Ordnance Survey OpenSpace service. This can be used to access Ordnance Survey tiles without using the OS OpenSpace API which is tied to a certain version of OpenLayers and often behind the latest release.
