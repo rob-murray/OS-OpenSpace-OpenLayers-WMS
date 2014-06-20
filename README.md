@@ -1,6 +1,6 @@
 ## A new OpenLayers WMS Layer for using Ordnance Survey OpenSpace service
 
-[![Haz Commitz Status](http://haz-commitz.herokuapp.com/repos/rob-murray/OS-OpenSpace-OpenLayers-WMS/badge.svg)](http://haz-commitz.herokuapp.com/repos/rob-murray/OS-OpenSpace-OpenLayers-WMS)
+[![Haz Commitz Status](http://haz-commitz.herokuapp.com/repos/rob-murray/OS-OpenSpace-OpenLayers-WMS.svg)](http://haz-commitz.herokuapp.com/repos/rob-murray/OS-OpenSpace-OpenLayers-WMS)
 
 ### Description
 
